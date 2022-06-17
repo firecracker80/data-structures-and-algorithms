@@ -64,6 +64,8 @@ HINT: Do it with a custom sort callback, not with using `.reverse()`. ;)
 ------------------------------------------------------------------------------------------------ */
 
 const sortBackwards = (arr) => {
+  let highLow = arr.sort((a, b) => b-a);
+  return highLow;
   // Solution code here...
 };
 
@@ -78,6 +80,8 @@ For example, ['Alphabet', 'Zebra', 'alphabet', 'carrot'] is correctly sorted.
 ------------------------------------------------------------------------------------------------ */
 
 const alphabetize = (arr) => {
+  let alphabet = arr.sort();
+  return alphabet;
   // Solution code here...
 };
 
@@ -95,6 +99,8 @@ Here is an example of the input:
 ------------------------------------------------------------------------------------------------ */
 
 const sortByPrice = (arr) => {
+  let priceList = arr.sort((a,b) => (a.price > b.price ? 1 : -1));
+  return priceList;
   // Solution code here...
 };
 
