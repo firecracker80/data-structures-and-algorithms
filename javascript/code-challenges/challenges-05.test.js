@@ -12,8 +12,6 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
-  return people.map(person => {return
-    `${person.firstName} ${person.lastName}`});
   // Solution code here...
 };
 
@@ -25,10 +23,6 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
-   return arr.reduce((runningTotal, currentValue) => {return runningTotal + currentValue}
-
-
-
   // Solution code here...
 };
 
