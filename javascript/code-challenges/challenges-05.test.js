@@ -12,9 +12,11 @@ Note the space in between first and last names.
 You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
+  let newName = people.map(p => p.firstName + ' ' + p.lastName);
+  return newName;
   // Solution code here...
 };
-
+''
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
@@ -23,6 +25,10 @@ Write a function named addValues that, given an array of numbers as input, uses 
 ------------------------------------------------------------------------------------------------ */
 
 const addValues = (arr) => {
+  let newSum = arr.reduce((total, currentValue) => {
+    return total + currentValue;
+}, 0);
+  return newSum;
   // Solution code here...
 };
 
@@ -39,6 +45,9 @@ Write a function named addPurchases that, given an array of objects as input, us
 ------------------------------------------------------------------------------------------------ */
 
 const addPurchases = (arr) => {
+  let newSum = arr.reduce((previousValue, currentValue) => {return previousValue + currentValue.purchasePrice}, 0);
+  return newSum;
+
   // Solution code here...
 };
 
@@ -51,6 +60,9 @@ Note: You may not use the array's built-in length property.
 ------------------------------------------------------------------------------------------------ */
 
 const countNumberOfElements = (arr) => {
+  let newCount = arr.reduce(function (count, current) {
+    if (current) return count + 1}, 0);
+    return newCount;
   // Solution code here...
 };
 
@@ -111,6 +123,8 @@ let starWarsData = [{
 }];
 
 const returnNames = (arr) => {
+  let listNames = arr.reduce((character, nextCharacter) => {return character.concat(nextCharacter.name)}, []);
+  return listNames;
   // Solution code here...
 };
 
@@ -123,6 +137,8 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 ------------------------------------------------------------------------------------------------ */
 
 const reversedString = (str) => {
+  let newStr = str.split('');
+  return newStr.reduce((previousLtr, currentLtr)=> {return currentLtr + previousLtr}, '');
   // Solution code here...
 };
 
