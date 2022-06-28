@@ -10,10 +10,10 @@ Write a function named returnTen, takes in a string and uses split and splice to
 function returnTen(str){
   let newStr = [];
   for(let i=0; i<str.length-1;i++)
-  for(let j=0; j<str[i].length-1; j++){
-    newStr.push(str[i].length-1);
-    return newStr;
-  }
+    for(let j=0; j<str[i].length-1; j++){
+      newStr.push(str[i].length-1);
+      return newStr;
+    }
 
   // Solution code here...
 }
@@ -54,6 +54,14 @@ For example:
 return: 35
 ------------------------------------------------------------------------------------------------ */
 const totalSum = (matrix) => {
+  let totalSum =0;
+  matrix.forEach(nestedArr => {
+    nestedArr.forEach(number => {
+      totalSum += number;
+    });
+  });
+  return totalSum;
+  // return matrix.flat().reduce((oreVal, current) => preVal + current, 0);
   // Solution code here...
 };
 
@@ -81,6 +89,17 @@ const alkiBeach = [33, 31, 147, 130, 27, 93, 38, 126, 141, 63, 46, 17];
 const cookieStores = [firstPike, seaTac, seattleCenter, capHill, alkiBeach];
 
 const grandTotal = (stores) => {
+  let hourTotal = [];
+  for(let i=0; i<stores[0].length; i++){
+    let hourSum = 0;
+    for(let j=0; j<stores.length; j++){
+      hourSum += stores[j][i];
+    }
+      hourTotal.push(hourSum);}
+
+  
+
+  return hourTotal;
   // Solution code here...
 
 };
@@ -121,6 +140,16 @@ const errands = [
 ];
 
 const howManyTreats = (arr) => {
+  let treats = 0;
+  arr.forEach(obj => {
+    let listArr = obj.items;
+    listArr.forEach(item => {
+      if(item.name === 'Treats'){
+        treats = item.quantity;
+      }
+    });
+  });
+  return treats;
   // Solution code here...
 };
 
