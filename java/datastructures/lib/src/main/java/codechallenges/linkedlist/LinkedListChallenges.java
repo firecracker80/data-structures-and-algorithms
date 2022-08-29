@@ -29,9 +29,12 @@ firstList.addLast(&head, c);
     Return firstList;
   }
 
-Public static toString(){
-  return
+  public static append(){
   }
+
+//Public static toString(){
+//  return
+//  }
 }
 
 
