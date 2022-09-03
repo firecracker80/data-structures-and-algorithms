@@ -1,14 +1,14 @@
 package codechallenges.linkedlist;
 
-import datastructures.linkedlist.LinkedList;
 import java.util.LinkedList;
+
 
 public class LinkedListChallenges
 {
   LinkedList firstList = new LinkedList<>();
 
-  public void insert(){
-    struct node *newNode = firstList(sizeof(struct node);
+  public <struct> void insert(){
+    struct node newNode = firstList(sizeof(struct node);
     newNode -> data = value;
     if(*head == null){
     *head = newNode;
