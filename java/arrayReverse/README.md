@@ -3,7 +3,7 @@ In this challenge the task is to create a whiteboard of the problem domain, whic
 
 ## Whiteboard Process
 Whiteboard Workflow
-![Reverse Array](/arrayReverse/CC1.png)
+![Reverse Array](CC1.png)
 
 ## Approach & Efficiency
 I decided to use Invision to create my whiteboard. It is a free online app I am comfortable using.
