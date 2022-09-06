@@ -15,3 +15,4 @@ postOrder - public void, traverse left, then right, then logic, push value to an
 BST public methods:
 add - this method will add a new node with value
 contains - this method will return a boolean of true, if the node contains a value.
+

@@ -7,6 +7,7 @@ public class BinaryTree {
   private ArrayList<Integer> treeArray = null;
 
 
+
   public BinaryTree(Node root) {
     this.root = null;
   }

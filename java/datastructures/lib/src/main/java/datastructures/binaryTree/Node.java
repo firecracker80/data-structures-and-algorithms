@@ -1,9 +1,11 @@
 package datastructures.binaryTree;
 
 public class Node {
-  static int value;
-  static Node left;
-  static Node right;
+
+  int value;
+  Node left;
+  Node right;
+
 
   public Node(int value, Node left, Node right) {
     this.value = value;
